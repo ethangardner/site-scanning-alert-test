@@ -1,0 +1,22 @@
+name: Site Scanning Alerts
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+concurrency:
+  group: site-scanning-alerts-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  check-alerts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: GSA/site-scanning-alert-template@task/workflow-safeguards
+        with:
+          watchlist: watchlist.txt
+          dry_run: true
