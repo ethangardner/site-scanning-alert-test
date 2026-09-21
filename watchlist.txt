@@ -1,3 +1,5 @@
 # Test watchlist for site-scanning-alert-template sandbox
-www.gsa.gov
-blog.gsa.gov
+18f.gsa.gov
+aas.gsa.gov
+typo-domain-that-does-not-exist.gov
+base:gsa.gov
