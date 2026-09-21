@@ -19,4 +19,4 @@ jobs:
       - uses: GSA/site-scanning-alert-template@task/workflow-safeguards
         with:
           watchlist: watchlist.txt
-          dry_run: true
+          dry_run: false
