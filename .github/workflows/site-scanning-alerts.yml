@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: GSA/site-scanning-alert-template@3183687c2f44239c5ab1665368f53df018ec2650
+      - uses: GSA/site-scanning-alert-template@9027be2fd9cd49048b64b06ae2be19326444bdb6
         with:
           watchlist: watchlist.txt
           dry_run: false
