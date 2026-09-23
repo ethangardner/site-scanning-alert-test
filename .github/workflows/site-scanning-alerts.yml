@@ -15,8 +15,8 @@ jobs:
   check-alerts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: GSA/site-scanning-alert-template@9027be2fd9cd49048b64b06ae2be19326444bdb6
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # pin v7.0.1
+      - uses: GSA/site-scanning-alert-template@4547eff11cc594e1ab6781723b0a0d864512cee4
         with:
           watchlist: watchlist.txt
           dry_run: false
